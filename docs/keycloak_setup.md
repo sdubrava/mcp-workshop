@@ -87,6 +87,8 @@ curl -X POST "http://localhost:8080/realms/mcp-workshop/protocol/openid-connect/
   -d "grant_type=password"
 ```
 
+> **Security Note**: In production, never hardcode client secrets. Use environment variables or a secure secret management system (e.g., HashiCorp Vault, AWS Secrets Manager). Store the client secret in an `.env` file (already in `.gitignore`) and load it securely.
+
 The response will include an `access_token` you can use with the `/time` endpoint.
 
 ### 6. Test the Authenticated Endpoint
