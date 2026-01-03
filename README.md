@@ -28,9 +28,9 @@ pip install -r requirements.txt
 
 - `servers/` — workshop servers (mostly stdio)
 - `common/` — helpers shared by servers
-- `docs/` — detailed guides
+- `docs/` — detailed guides (VS Code, agents, security, Keycloak)
 - `scripts/` — helper scripts and demo materials
-- `docker/` — local infra (Keycloak)
+- `docker/` — local infra (Keycloak for auth demos)
 
 ## Running servers
 
@@ -85,6 +85,8 @@ uv run python servers/07_security_hardened_stdio.py
 ```bash
 uv run python servers/08_auth_time_http.py
 ```
+
+> For Keycloak integration with server 08, see `docs/keycloak_setup.md`.
 
 See docs for Inspector / VS Code / agent usage.
 
