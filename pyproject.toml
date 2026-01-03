@@ -1,10 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "mcp-workshop"
 version = "0.1.0"
 description = "Workshop scaffold for MCP servers (FastMCP/FastAPI)"
 requires-python = ">=3.11"
 readme = "README.md"
-license = { text = "MIT" }
+license = "MIT"
 
 dependencies = [
   # NOTE: Actual package names/versions may differ across MCP/FastMCP distributions.
@@ -28,6 +32,9 @@ line-length = 100
 
 [tool.ruff.lint]
 select = ["E", "F", "I"]
+
+[tool.setuptools]
+packages = ["common", "servers"]
 
 [tool.uv]
 # uv will read dependencies from [project]
