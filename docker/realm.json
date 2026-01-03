@@ -1,0 +1,4 @@
+{
+  "TODO": "Replace this placeholder with a real exported Keycloak realm for the workshop",
+  "hint": "Create a realm with a client for this workshop and export it here."
+}
